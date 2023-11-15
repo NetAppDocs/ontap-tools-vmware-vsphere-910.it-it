@@ -9,9 +9,9 @@ entries:
   - title: Ridimensionare gli archivi dati
     url: "/manage/task_resize_datastores.html"
   - title: Modificare un datastore vVols
-    url: "/manage/task_edit_a_vvols_datastore.html"
+    url: "/manage/task_edit_a_vvol_datastore.html"
   - title: Aggiungere storage a un datastore vVols
-    url: "/manage/task_add_storage_to_a_vvols_datastore.html"
+    url: "/manage/task_add_storage_to_a_vvol_datastore.html"
   - title: Rimuovere lo storage da un datastore vVols
     url: "/manage/task_remove_storage_from_a_vvols_datastore.html"
   - title: Montare un datastore vVols

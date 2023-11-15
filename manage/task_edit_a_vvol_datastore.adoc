@@ -1,5 +1,5 @@
 ---
-permalink: manage/task_edit_a_vvols_datastore.html 
+permalink: manage/task_edit_a_vvol_datastore.html 
 sidebar: sidebar 
 keywords:  
 summary: È possibile modificare un datastore VMware Virtual Volumes/vVols esistente per modificare il profilo di capacità storage predefinito. Il profilo di capacità storage predefinito viene utilizzato principalmente per Swap vVol. 

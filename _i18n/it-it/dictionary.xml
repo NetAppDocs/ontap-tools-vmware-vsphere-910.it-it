@@ -402,7 +402,6 @@
   <block id="b6b2c55f92e8e04471c740483e69a795" category="paragraph">È possibile aumentare o ridurre le dimensioni di un datastore NFS, ma per un datastore VMFS è possibile solo aumentarle. Il ridimensionamento del datastore è supportato anche per gli archivi dati FlexGroup con opzione di crescita e riduzione automatica. Un FlexGroup che fa parte di un datastore tradizionale e di un volume FlexVol che fa parte di un datastore vVols non può ridursi al di sotto delle dimensioni esistenti ma può crescere al massimo del 120%. Gli snapshot predefiniti sono attivati su questi volumi FlexGroup e FlexVol.</block>
   <block id="1b837800f24f729eb8e73a102257c0bd" category="admonition">Se si utilizzano piattaforme di storage di tipo All SAN Array (ASA) con ONTAP 9.9.1 o versione successiva, solo allora è possibile creare datastore vVol con dimensioni vmdk superiori a 16 TB.</block>
   <block id="0e6fc56cbe91d72cb03e33a904ae9ab3" category="list-text">Nel riquadro di navigazione, selezionare il data center che contiene il datastore.</block>
-  <block id="a15d1bf5dee929fddbf2e03ae0f830e9" category="list-text">Fare clic con il pulsante destro del mouse sull'archivio dati e selezionare *NetApp ONTAP Tools* &gt; *Assegna QoS*.</block>
   <block id="425e99780c82b74f333dd7da3068f492" category="list-text">Nella finestra di dialogo Ridimensiona, specificare una nuova dimensione per l'archivio dati, quindi fare clic su *OK*.</block>
   <block id="29b33d6a4971ded7e90ffb22fa8e685d" category="paragraph">È possibile eseguire l'opzione *RISCOPRI TUTTO* nel menu Storage Systems (sistemi storage) per aggiornare manualmente l'elenco di storage in Storage Systems and Dashboard (sistemi storage e dashboard) o attendere il successivo aggiornamento pianificato.</block>
   <block id="d9cf595bd31604d4a74bc6fcf1e62921" category="summary">È possibile verificare rapidamente se i datastore sono conformi ai profili delle funzionalità di storage mappati agli archivi dati.</block>
@@ -753,7 +752,6 @@
   <block id="00a510939945fb6eb144a70baf6f9fd4" category="admonition">L'intervallo di timeout specificato è il valore massimo. Non è necessario attendere il raggiungimento del timeout massimo. La maggior parte dei comandi termina entro l'intervallo di timeout massimo impostato.</block>
   <block id="e8e75924ea6b1743aedaf9cdc60f2811" category="paragraph">È inoltre necessario impostare il tempo massimo per l'esecuzione di una singola operazione nel file vvol.properties: offtap.operation.timeout.period.seconds=86400.</block>
   <block id="0a757269d3671e08f4647a4a3f39c7af" category="inline-link">Risposta della Knowledge base di NetApp 1001111: Guida al dimensionamento di NetApp Storage Replication Adapter 4.0/7.X per ONTAP</block>
-  <block id="61497a3ce40a5b82feed85f8793d337b" category="paragraph"><block ref="61497a3ce40a5b82feed85f8793d337b" category="inline-link-rx"></block></block>
   <block id="b2dacb077897e6e20eab5019528b0b4d" category="paragraph">La documentazione VMware sulla modifica delle impostazioni DEL provider SAN contiene ulteriori informazioni.</block>
   <block id="c106a2cd545fb9665a990784905584ee" category="inline-link">Documentazione di VMware Site Recovery Manager: Modifica delle impostazioni di storage</block>
   <block id="5ae0fbc5a94ef2dc0c2a09ad3529481f" category="paragraph"><block ref="5ae0fbc5a94ef2dc0c2a09ad3529481f" category="inline-link-rx"></block></block>
@@ -953,8 +951,6 @@
   <block id="637136b177eed37009281c2b49416083" category="inline-link-macro">Configurare i ruoli e i privilegi degli utenti</block>
   <block id="b36e85751d57920856a667a70fbd44c3" category="paragraph"><block ref="b36e85751d57920856a667a70fbd44c3" category="inline-link-macro-rx"></block></block>
   <block id="3932191a381dc130ecf8b7f97d887769" category="list-text">Tool RBAC User Creator per ONTAP (se si utilizza ONTAP 9.6 o versione precedente)</block>
-  <block id="3c25e2e440e9f31af6d29f0e44415780" category="inline-link">Tool RBAC User Creator per VSC, VASA Provider e Storage Replication Adapter 7.0 per VMware vSphere</block>
-  <block id="6b2d93598a0b579fbc8c679697788778" category="paragraph"><block ref="6b2d93598a0b579fbc8c679697788778" category="inline-link-rx"></block></block>
   <block id="69e3a1dff1352bb06840dbcbff566e40" category="list-text">Creare utenti con il ruolo assegnato e il set di applicazioni appropriato utilizzando ONTAP</block>
   <block id="a4e90f544f0d8ede6e2023d539fef693" category="paragraph">Queste credenziali del sistema storage sono necessarie per configurare i sistemi storage per VSC. È possibile configurare i sistemi storage per VSC immettendo le credenziali in VSC. Ogni volta che si accede a un sistema storage con queste credenziali, si disporranno delle autorizzazioni per le funzioni VSC configurate in ONTAP durante la creazione delle credenziali.</block>
   <block id="82e8b78ffb3455f0a5df307de255c3dc" category="list-text">Aggiungere il sistema storage a VSC e fornire le credenziali dell'utente appena creato</block>
@@ -1001,7 +997,6 @@
   <block id="07cda92265f02dc6b3431f3719b53172" category="doc">Ruoli ONTAP consigliati quando si utilizzano gli strumenti ONTAP per VMware vSphere</block>
   <block id="390444b5184e09f391fad8737a8150f9" category="paragraph">È possibile impostare diversi ruoli ONTAP consigliati per lavorare con gli strumenti ONTAP per VMware vSphere e RBAC (role-based access control). Questi ruoli contengono i privilegi di ONTAP necessari per eseguire le operazioni di storage necessarie eseguite dalle attività della console di storage virtuale (VSC).</block>
   <block id="dd6c0dbcc4119a8285de2d57fc6bc9c0" category="paragraph">Per creare nuovi ruoli utente, è necessario accedere come amministratore nei sistemi storage che eseguono ONTAP. È possibile creare ruoli ONTAP utilizzando una delle seguenti opzioni:</block>
-  <block id="6490af081af6fea3ac5350f6812a0057" category="paragraph"><block ref="6490af081af6fea3ac5350f6812a0057" category="inline-link-rx"></block></block>
   <block id="5bc83c5da5e874a1f3cd46def8b7086a" category="paragraph">A ciascun ruolo di ONTAP è associata una coppia di nome utente e password, che costituiscono le credenziali del ruolo. Se non si effettua l'accesso utilizzando queste credenziali, non è possibile accedere alle operazioni di storage associate al ruolo.</block>
   <block id="92bedc01b7222f50b165fadee33a0cdd" category="paragraph">Come misura di sicurezza, i ruoli ONTAP specifici del VSC sono ordinati gerarchicamente. Ciò significa che il primo ruolo è il ruolo più restrittivo e dispone solo dei privilegi associati al set più semplice di operazioni di storage VSC. Il ruolo successivo include sia i propri privilegi che tutti i privilegi associati al ruolo precedente. Ogni ruolo aggiuntivo è meno restrittivo per quanto riguarda le operazioni di storage supportate.</block>
   <block id="92e1f75474e9be7c3cf34b3eb30f325e" category="paragraph">Di seguito sono riportati alcuni dei ruoli RBAC ONTAP consigliati quando si utilizza VSC. Dopo aver creato questi ruoli, è possibile assegnare i ruoli agli utenti che devono eseguire attività correlate allo storage, ad esempio il provisioning delle macchine virtuali.</block>
@@ -1944,7 +1939,6 @@
   <block id="4c3c39a603eb21106d2df2836d4b456c" category="sidebar">Knowledge base di NetApp - Tool ONTAP</block>
   <block id="bbf1057ad175e1e1664e224351019ac9" category="sidebar">NetApp Import Utility - Video</block>
   <block id="72393f9ef0b6b69526a30ac7ce5276bc" category="sidebar">Community NetApp - Tool ONTAP</block>
-  <block id="ed9018b2e8611a3d2c03bb6a205b9715" category="sidebar">Strumenti ONTAP per VMware vSphere</block>
   <block id="4226794a7bb33ab0a2309e30c07c9031" category="sidebar">Gestire gli strumenti ONTAP</block>
   <block id="1b8a04f09ff55290753a17988fd53c2a" category="sidebar">Gestire i datastore</block>
   <block id="427d9ce60f4b39aa82a25138b4aa489f" category="sidebar">Gestire le macchine virtuali</block>
@@ -1983,4 +1977,6 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="389adae702b47ad2c98095885b166665" category="paragraph"><block ref="389adae702b47ad2c98095885b166665" category="inline-link-rx"></block></block>
+  <block id="bdc5a4ba1115f3f724e1f81e7f41eeef" category="list-text">Fare clic con il pulsante destro del mouse sull'archivio dati e selezionare *NetApp ONTAP tools* &gt; *Ridimensiona archivio dati non vVol*.</block>
 </blocks>

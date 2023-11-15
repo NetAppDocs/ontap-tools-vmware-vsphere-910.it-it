@@ -58,9 +58,6 @@ Per creare nuovi ruoli utente, è necessario accedere come amministratore nei si
 link:../configure/task_configure_user_role_and_privileges.html["Configurare i ruoli e i privilegi degli utenti"]
 
 * Tool RBAC User Creator per ONTAP (se si utilizza ONTAP 9.6 o versione precedente)
-+
-https://community.netapp.com/t5/Virtualization-Articles-and-Resources/RBAC-User-Creator-tool-for-VSC-VASA-Provider-and-Storage-Replication-Adapter-7-0/ta-p/133203["Tool RBAC User Creator per VSC, VASA Provider e Storage Replication Adapter 7.0 per VMware vSphere"]
-
 
 
 A ciascun ruolo di ONTAP è associata una coppia di nome utente e password, che costituiscono le credenziali del ruolo. Se non si effettua l'accesso utilizzando queste credenziali, non è possibile accedere alle operazioni di storage associate al ruolo.
