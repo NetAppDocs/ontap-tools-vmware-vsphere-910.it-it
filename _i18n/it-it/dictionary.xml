@@ -361,7 +361,6 @@
   <block id="211c9db57cb6ce5c2e16c1ff37eaa820" category="doc">Analizza i dati delle performance utilizzando la dashboard tradizionale</block>
   <block id="096926a9260db65d51c453dd6fe63a06" category="paragraph">Selezionare l'opzione *Enable Storage i/o Control and statistics collection* (Abilita controllo i/o storage e raccolta di statistiche) o *Disable Storage i/o Control but enable statistics collection* (Disattiva controllo i/o storage ma attiva raccolta di statistiche) nella finestra di dialogo Configure Storage i/o Control È possibile attivare Storage i/o Control solo se si dispone della licenza Enterprise Plus di VMware.</block>
   <block id="5900a4191170b6191797e473524d5bfd" category="inline-link">Documentazione VMware vSphere: Abilitare il controllo i/o dello storage</block>
-  <block id="b7a328ea0603bc67c4f6c59226da970a" category="paragraph"><block ref="b7a328ea0603bc67c4f6c59226da970a" category="inline-link-rx"></block></block>
   <block id="4a7619cde2c717f99a4aa51b8332f2e5" category="paragraph">La dashboard tradizionale visualizza le metriche di IOPS, spazio utilizzato, latenza e capacità impegnata ottenute dal server vCenter. ONTAP fornisce metriche aggregate per il risparmio di spazio alla dashboard tradizionale. È possibile visualizzare il risparmio di spazio per un aggregato specifico. Questi parametri delle performance consentono di identificare i colli di bottiglia delle performance nell'ambiente virtuale e di intraprendere azioni correttive per risolvere i problemi.</block>
   <block id="77fc87b2d4510a0bda82e14b45856ab6" category="paragraph">La dashboard tradizionale degli strumenti ONTAP consente di visualizzare gli archivi dati NFS o gli archivi dati VMFS. È possibile fare clic su un datastore per accedere alla vista dei dettagli del datastore fornita dall'istanza di vCenter Server per visualizzare e risolvere eventuali problemi con i datastore nel vCenter Server.</block>
   <block id="63a1762e79217ec6ff7ab30bd38f5de9" category="list-text">Dalla home page del client vSphere, fare clic su *ONTAP tools for VMware vSphere*.</block>
@@ -499,9 +498,7 @@
   <block id="3e44226773fd5e723731c1d4266a9cac" category="paragraph">È necessario attivare la licenza FlexClone per eseguire operazioni di failover di test per SRA.</block>
   <block id="a919e368cdc2a31db9bf251c27d9df05" category="paragraph">Per visualizzare gli IOPS di un datastore, è necessario attivare il controllo Storage i/o o o deselezionare la casella di controllo Disable Storage i/o statistics collection (Disattiva raccolta statistiche i/o storage) nella configurazione Storage i/o control (controllo i/o storage). È possibile attivare il controllo i/o dello storage solo se si dispone della licenza Enterprise Plus di VMware.</block>
   <block id="334d1eb45fc0c2dc8df94b8b513b8df4" category="inline-link">Risoluzione dei problemi relativi al controllo i/o dello storage</block>
-  <block id="1a5f6041f129f43810f85de306ad33b2" category="list-text"><block ref="1a5f6041f129f43810f85de306ad33b2" category="inline-link-rx"></block></block>
   <block id="6cb4e4fceb86a9c3efe7f9d4e5d29473" category="inline-link">Requisiti per il controllo i/o dello storage</block>
-  <block id="fcafb33f3f1e5ad308452fccb673af13" category="list-text"><block ref="fcafb33f3f1e5ad308452fccb673af13" category="inline-link-rx"></block></block>
   <block id="33e56a0de825b362ef14edf3b9b5a12e" category="summary">Per impostazione predefinita, i tool ONTAP per VMware vSphere dispongono della funzionalità del provider VASA. È possibile configurare gli archivi dati di VMware Virtual Volumes con i profili di funzionalità storage richiesti per ciascun datastore vVols.</block>
   <block id="c9718ba5e1b96f2d97c39fbb867ed1b7" category="doc">Abilitare il provider VASA per la configurazione di datastore virtuali</block>
   <block id="32c44544d19f721059a8fcff5e25184a" category="paragraph">Per impostazione predefinita, i tool ONTAP per VMware vSphere dispongono della funzionalità del provider VASA. È possibile configurare gli archivi dati di VMware Virtual Volumes (vVols) con i profili di funzionalità storage richiesti per ciascun datastore vVols.</block>
@@ -757,10 +754,8 @@
   <block id="5ae0fbc5a94ef2dc0c2a09ad3529481f" category="paragraph"><block ref="5ae0fbc5a94ef2dc0c2a09ad3529481f" category="inline-link-rx"></block></block>
   <block id="e263045e30d0d45525a6c848d8439da4" category="inline-link-macro">Implementazione o aggiornamento dei tool ONTAP per VMware vSphere</block>
   <block id="5554fa88014dbf4d13c04c07b516f822" category="paragraph"><block ref="5554fa88014dbf4d13c04c07b516f822" category="inline-link-macro-rx"></block></block>
-  <block id="f941583eff3ed87da8d807407294540f" category="paragraph"><block ref="f941583eff3ed87da8d807407294540f" category="inline-link-macro-rx"></block></block>
   <block id="b4985c4f7663e3e799236852df85319e" category="inline-link-macro">I valori degli host ESXi vengono impostati utilizzando i tool ONTAP per VMware vSphere</block>
   <block id="fceaf78f3c73355fe250db66743fa112" category="list-text"><block ref="fceaf78f3c73355fe250db66743fa112" category="inline-link-macro-rx"></block></block>
-  <block id="52b95ac1087cc8a2310e7b2234240c33" category="list-text"><block ref="52b95ac1087cc8a2310e7b2234240c33" category="inline-link-macro-rx"></block></block>
   <block id="4a25ba261343dfefa80a9395e39a6a8b" category="summary">È necessario implementare gli strumenti ONTAP nel proprio ambiente e specificare i parametri richiesti per poter utilizzare l'appliance.</block>
   <block id="284ff625891d588a04415377b2ccf4fc" category="list-text">È necessario eseguire una release supportata di vCenter Server.</block>
   <block id="22d503fcf87b43d3d538960286a3aabe" category="admonition">I tool ONTAP possono essere registrati con un'implementazione Windows di vCenter Server o con un'implementazione vCSA (VMware vCenter Server Virtual Appliance).</block>
@@ -873,7 +868,6 @@
   <block id="95954e13c3fd02d60d2176c6788c994a" category="paragraph">Il sistema deve soddisfare i requisiti della CPU, i requisiti dei limiti delle macchine virtuali e i requisiti di licenza per la configurazione di vSphere FT per l'istanza di vCenter Server.</block>
   <block id="66c5b34575bb610e09f6281aecda93e6" category="paragraph">La procedura per configurare ha dipende dalla versione di vCenter Server. Ad esempio, è possibile utilizzare il seguente collegamento di riferimento e selezionare la versione di vCenter Server richiesta per visualizzare la procedura di configurazione di ha.</block>
   <block id="9c506678975809e892cfdd7c14758cae" category="inline-link">Documentazione di VMware vSphere: Requisiti di tolleranza agli errori, limiti e licenze</block>
-  <block id="20422418e9f27ff480459f880734075a" category="paragraph"><block ref="20422418e9f27ff480459f880734075a" category="inline-link-rx"></block></block>
   <block id="5589c3092776301a216aaf2d3ac2d8a8" category="summary">Diversi strumenti ONTAP per le attività di VMware vSphere richiedono diverse combinazioni di privilegi specifici per la console di storage virtuale e i privilegi vCenter Server nativi.</block>
   <block id="7d95f88d5acd32cda8bb48c562c0a438" category="doc">Privilegi richiesti per le attività VSC</block>
   <block id="193c88c1ab14526b933d9caf9484432a" category="paragraph">Diversi strumenti ONTAP per le attività di VMware vSphere richiedono diverse combinazioni di privilegi specifici per la console di storage virtuale (VSC) e i privilegi nativi di vCenter Server.</block>
@@ -887,7 +881,6 @@
   <block id="193f5724aa76560510625d6930654372" category="paragraph">La funzione VMware ha monitora le macchine virtuali per rilevare guasti al sistema operativo e all'hardware. Quando viene rilevato un errore, la funzione VMware ha riavvia le macchine virtuali sugli altri server fisici nel pool di risorse. L'intervento manuale non è necessario quando viene rilevato un guasto al server.</block>
   <block id="fddbfde8381a8cd2ead18c94350d2a14" category="paragraph">La procedura di configurazione di VMware ha dipende dalla versione di vCenter Server in uso. Ad esempio, è possibile utilizzare il seguente collegamento di riferimento e selezionare la versione di vCenter Server richiesta per visualizzare la procedura di configurazione di VMware ha.</block>
   <block id="1d5795cd94cc0753911dd6bc7e4121e0" category="inline-link">Documentazione VMware vSphere: Creazione e utilizzo di cluster ha vSphere</block>
-  <block id="57913afe7758e6ac629330a6211986c2" category="paragraph"><block ref="57913afe7758e6ac629330a6211986c2" category="inline-link-rx"></block></block>
   <block id="3413a918b6452d3e60e37eb18410f94c" category="summary">Esistono diversi punti chiave da tenere a mente quando si utilizzano le autorizzazioni di vCenter Server. Il successo di un'attività di ONTAP Tools per VMware vSphere dipende dalla posizione in cui è stata assegnata un'autorizzazione o dalle azioni intraprese da un utente dopo la modifica di un'autorizzazione.</block>
   <block id="74357ddc4a8bb94a1e387cdc464d35b9" category="doc">Punti chiave relativi all'assegnazione e alla modifica delle autorizzazioni per vCenter Server</block>
   <block id="c8ae2664c1636dc82742c9e4a7d61618" category="section-title">Assegnazione delle autorizzazioni</block>
@@ -1716,7 +1709,6 @@
   <block id="56d43ad1a280ada5e16fd2960ae44b32" category="list-text">SRM</block>
   <block id="03b870ced8b149ca765fa1ffe2f8b770" category="paragraph">La documentazione sull'installazione di SRM è disponibile sul sito VMware.</block>
   <block id="4617dd5a7193927c5552182931541c9c" category="inline-link">Documentazione di VMware Site Recovery Manager</block>
-  <block id="2b27cdd9529ad91885c6c019ee8329ee" category="paragraph"><block ref="2b27cdd9529ad91885c6c019ee8329ee" category="inline-link-rx"></block></block>
   <block id="406292f3c5b20715e348f48fa5e6d6e3" category="list-text">SRA</block>
   <block id="5964a20b29586f71f419711aae6ae487" category="paragraph">L'adattatore viene installato su SRM.</block>
   <block id="39d642e40fbcd108eb0ab15715ee349d" category="list-text">Verificare che gli host ESXi primari siano connessi alle LUN nel sistema di storage primario sul sito protetto.</block>
@@ -1975,4 +1967,12 @@
   <block id="5e9e6efcbe65718c4f8940b263317a69" category="paragraph"><block ref="7f4891afcb11aecd70e2cfd4c1573829" prefix="" category="inline-code"></block></block>
   <block id="5547d8d27b62c49e4555e1f79122a342" category="paragraph"><block ref="9e427bf42ac054021120757914ef1809" prefix="" category="inline-code"></block></block>
   <block id="b8ace162f3094fd5ac1138ced112d7a7" category="list-text">Avviare il servizio VMware vSphere Client:<block ref="bfbe7f4b006f6fcfc7bb66e075309067" prefix=" " category="inline-code"></block></block>
+  <block id="1bd8d6ba09152f99a95ef603229c8ab1" category="paragraph"><block ref="1bd8d6ba09152f99a95ef603229c8ab1" category="inline-link-rx"></block></block>
+  <block id="a762e0db55d4d5808cdfea7fab5aee85" category="paragraph"><block ref="a762e0db55d4d5808cdfea7fab5aee85" category="inline-link-rx"></block></block>
+  <block id="030c5a37181650fc00935fe9a88401c8" category="paragraph"><block ref="030c5a37181650fc00935fe9a88401c8" category="inline-link-rx"></block></block>
+  <block id="e6de46eb127ec26f1447e73128975188" category="list-text"><block ref="e6de46eb127ec26f1447e73128975188" category="inline-link-rx"></block></block>
+  <block id="d386b179f17143db20cfa12f52a7fd93" category="list-text"><block ref="d386b179f17143db20cfa12f52a7fd93" category="inline-link-rx"></block></block>
+  <block id="02d0a0958e73fd8f6b196e0763aac98c" category="paragraph"><block ref="02d0a0958e73fd8f6b196e0763aac98c" category="inline-link-macro-rx"></block></block>
+  <block id="a563fcea2bda3cf193363205e6468260" category="paragraph"><block ref="a563fcea2bda3cf193363205e6468260" category="inline-link-rx"></block></block>
+  <block id="3904b96e16e0546b33dbcc3f9cc072d0" category="paragraph"><block ref="3904b96e16e0546b33dbcc3f9cc072d0" category="inline-link-rx"></block></block>
 </blocks>

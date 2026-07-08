@@ -37,7 +37,7 @@ Aggiornamento da un'implementazione esistente di VSC
  a| 
 La procedura di aggiornamento da un'implementazione esistente di VSC a strumenti ONTAP dipende dalla versione di VSC e dalla distribuzione degli strumenti ONTAP. La sezione relativa ai flussi di lavoro di implementazione e all'aggiornamento contiene ulteriori informazioni.
 
-link:concept_installation_workflow_for_existing_users_of_vsc.html["Workflow di implementazione per gli utenti esistenti degli strumenti ONTAP"]
+link:concept_installation_workflow_for_existing_users_of_ontap_tools.html["Workflow di implementazione per gli utenti esistenti degli strumenti ONTAP"]
 
 Best practice prima di un aggiornamento:
 
@@ -98,7 +98,7 @@ Se l'azienda richiede di limitare l'accesso agli oggetti vSphere, è possibile c
 
 Se un utente tenta di eseguire un'attività senza i privilegi e le autorizzazioni corretti, le opzioni dell'attività non sono disponibili.
 
-* link:../concepts/concept_standard_roles_packaged_with_virtual_appliance_for_vsc_vp_and_sra.html["Ruoli standard forniti con gli strumenti ONTAP"]
+* link:../concepts/concept_standard_roles_packaged_with_ontap_tools_for_vmware_vsphere.html["Ruoli standard forniti con gli strumenti ONTAP"]
 * link:../concepts/concept_ontap_role_based_access_control_feature_for_ontap_tools.html["Autorizzazioni per i sistemi storage ONTAP e gli oggetti vSphere"]
 
 
